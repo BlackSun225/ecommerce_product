@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-CI">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-commerce Product Page Main</title>
+    <link type="icon" rel="x-icon/image" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="ecommerce.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <nav class="mob">
+            <img id="open" alt="" src="images/icon-menu.svg"/>
+            <div id="menu">
+              <div>
+                <img id="close" src="images/icon-close.svg" alt=""/>
+                <ul>
+                  <li>Collections</li>
+                  <li>Men</li>
+                  <li>Women</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <img id="logo" alt="" src="images/logo.svg" />
+        </div> 
+        <nav class="desk">
+          <ul>
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div id="cart">
+            <img id="cartimg" alt="" src="images/icon-cart.svg" />
+            <span id="notif"></span>
+            <div id="insidecart">
+              <h3>Cart</h3>
+              <div>
+                <div id="product">
+                  <img id="choice" alt="" src="images/image-product-1-thumbnail.jpg"/>
+                  <div>
+                    <h4>Fall Limited Edition Sneakers</h4>
+                    <span id="cartnum">$125.00 x #</span>
+                    <span id="amount">$000.00</span>
+                  </div>
+                  <img id="delete" alt="" src="images/icon-delete.svg" />
+                </div>
+                <button>Checkout</button>
+                <span id="empty">Your cart is empty</span>
+              </div>
+            </div>
+          </div>
+          <div id="avatar"><img alt="" src="images/image-avatar.png" /></div>
+        </div>
+      </header>
+      <section>
+        <div>
+          <button class="prev mob"><img alt="" src="images/icon-previous.svg"/></button>
+          <img id="mobpic" class="mob" src="images/image-product-1.jpg" alt="sneaker" />
+          <img id="mpic" class="desk" alt="sneaker" src="images/image-product-1.jpg" />
+          <button class="next mob"><img alt="" src="images/icon-next.svg"/></button>
+          <div id="pics" class="desk">
+            <div class="smpic active">
+              <img  src="images/image-product-1-thumbnail.jpg" alt="sneaker" />
+            </div>
+            <div class="smpic">
+              <img src="images/image-product-2-thumbnail.jpg" alt="sneaker" />
+            </div>
+            <div class="smpic">
+              <img  src="images/image-product-3-thumbnail.jpg" alt="sneaker" />
+            </div>
+            <div class="smpic">
+              <img src="images/image-product-4-thumbnail.jpg" alt="sneaker" />
+            </div>
+          </div>
+        </div>
+        <div id="spec">
+          <h1>SNEAKER COMPANY</h1>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>These low-profile sneakers are your perfect casual wear companion. 
+            Featuring a durable rubber outer sole, they'll withstand everything 
+            the weather can offer.
+          </p>
+          <div >
+            <div id="p">
+              <span id="price">$125.00</span><span id="reduc">50%</span>
+            </div>
+            <div id="prevprice">$250.00</div>
+          </div>
+          <div id="mngarticle">
+            <div id="numofarticle">
+              <img alt="" src="images/icon-minus.svg" id="min"/>
+              <span id="quantity">0</span>
+              <img alt="" src="images/icon-plus.svg" id="plus"/>
+            </div>
+            <button><img alt="" src="images/icon-cart-white.svg"/><span>Add to cart</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="see" class="desk">
+        <div id="smpic">
+          <img class="close" alt="" src="images/icon-close-white.svg"/>
+          <img class="ref" src="images/image-product-1.jpg" alt="" />
+          <button class="prev"><img alt="" src="images/icon-previous.svg"/></button> 
+          <button class="next"><img alt="" src="images/icon-next.svg"/></button>
+        </div>
+        <div>
+          <div class="spic active">
+            <img src="images/image-product-1-thumbnail.jpg" alt="sneaker" />
+          </div>
+          <div class="spic">
+            <img src="images/image-product-2-thumbnail.jpg" alt="sneaker" />
+          </div>
+          <div class="spic">
+            <img src="images/image-product-3-thumbnail.jpg" alt="sneaker" />
+          </div>
+          <div class="spic">
+            <img src="images/image-product-4-thumbnail.jpg" alt="sneaker" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="ecommerce.js"></script>
+  </body>
+</html>
